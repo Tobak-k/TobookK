@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Your place to reboot</h1>
+        <p>Choose any book you like and enjoy.</p>
+    </header>
+   <nav>
+        <div class="dropdown">
+        <label for="menu-toggle" class="dropbtn">☰ Menu</label>
+        <div class="dropdown-content">
+          <a href="index.html">Main page</a>
+          <a href="loginform.html">Login</a>
+          <a href="registrationform.html">Registration</a>
+          <a href="connectionform.html">Contacts</a>
+         </div>
+      </div>
+    </nav>
+    <form action="#" method="get" target="_self">
+        <fieldset>
+        <legend> Personalia:</legend>
+        <label for="frame">First name:</label> <br>
+        <input type="text" id="frame" name="frame"><br>
+        <label for="Iname">Last name:</label> <br>
+        <input type="text" id="Iname" name="Iname"><br>
+        <label for="email"> Enter your email:</label> <br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone"> Enter your phone:</label> <br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> <br>
+        <small>Format: 123-45-678</small><br><br>
+        <input type="submit" value="submit">
+        </fieldset>
+        <fieldset>
+        <legend>Message:</legend>
+        <label for="message">Text:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your massage here..."></textarea><br><br>
+        <label for="message_type">Message type:</label><br>
+        <select id="message_type" name="message_type">
+            <option value="question">Question</option>
+            <option value="suggestion">Wish</option>
+            <option value="complaint">Complaint</option>
+            <option value="other">Other</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend> Contact method:</legend>
+            <input type="radio" id="phone" name="contact_method" value="phone">
+            <label for="phone">Phone</label>
+            <input type="radio" id="email" name="contact_method" value="email">
+            <label for="email">Email</label>
+        </fieldset>
+        <input type="submit" value="send">
+    </form>
+     <footer>
+        <p>©2025 Tobook</p>
+    </footer>
+</body>
+</html>
